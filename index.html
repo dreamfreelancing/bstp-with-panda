@@ -10,7 +10,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- manu bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt=""  class="d-inline-block align-text-top">
@@ -24,13 +25,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link ">Backpack</a>
+                    <a class="nav-link" href="#Backpack">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link ">Subscribe</a>
+                    <a class="nav-link" href="#Subscribe">Subscribe</a>
                   </li>
                 </ul>
                 <form class="d-flex">
@@ -107,6 +108,7 @@
           </section>
     </header>
     <main>
+         <!-- shoes catagory -->
         <div class="container my-5">
             <div class="row g-4">
               <div class="col-lg-4">
@@ -133,7 +135,7 @@
             </div>
          </div>
          <!-- shoes card -->
-         <section class="container">
+         <section class="container" id="shoes">
            <h2>Shoes</h2>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -177,7 +179,8 @@
             </div>
           </div>
          </section>
-         <section class="container">
+         <!-- Backpack card -->
+         <section class="container my-5" id="Backpack" >
            <h2>Backpack</h2>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -224,9 +227,21 @@
             </div>
           </div>
          </section>
+         <!-- subscribe -->
+         <section style="height:300px" class="container bg-info my-5 d-flex justify-content-center align-items-center rounded-3" id="Subscribe">
+           <div>
+            <h1>LET'S STAY IN TOUCH</h1>
+            <p>Get updates on sales, specials and more</p>
+            <input class="form-control me-2" type="e-mail" placeholder="Inter Your E-mail" >
+            <button class="btn btn-warning mt-1">
+               SUBMIT
+            </button>
+           </div>
+         </section>
     </main>
-    <footer>
-
+    <!-- footer -->
+    <footer class="container mt-5 text-center" >
+      <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
     <!-- bstp script -->
     <script src="js/bootstrap.bundle.min.js"></script>
